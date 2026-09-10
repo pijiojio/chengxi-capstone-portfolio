@@ -203,6 +203,88 @@ a { color: inherit; text-decoration: none; }
 
 .profile a:hover { text-decoration-color: var(--accent); }
 
+.capstone-map {
+  margin: 28px 0 0;
+  padding: 22px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.capstone-map h2 {
+  margin: 0 0 16px;
+  font-family: var(--display);
+  font-size: clamp(1.35rem, 2.8vw, 1.75rem);
+  letter-spacing: -0.03em;
+}
+
+.fit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.fit-grid > div {
+  padding: 14px 14px 16px;
+  border-top: 2px solid var(--ink);
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.fit-grid h3 {
+  margin: 0 0 6px;
+  font-family: var(--display);
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.fit-grid p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--mute);
+  line-height: 1.45;
+}
+
+.pm-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 12px;
+  margin: 0 0 22px;
+}
+
+.pm-box {
+  padding: 16px 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.pm-box .feature-points { margin-bottom: 0; }
+
+.decision-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 0 0 22px;
+}
+
+.decision-strip > div {
+  padding: 14px 14px 16px;
+  border-left: 3px solid var(--accent);
+  background: rgba(26, 107, 102, 0.06);
+}
+
+.decision-strip h4 {
+  margin: 0 0 6px;
+  font-family: var(--display);
+  font-size: 0.98rem;
+  letter-spacing: -0.02em;
+}
+
+.decision-strip p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--mute);
+  line-height: 1.5;
+}
+
 .project,
 .more {
   width: min(var(--max), calc(100% - 36px));
@@ -351,6 +433,10 @@ a { color: inherit; text-decoration: none; }
 
 .mode-grid.dual {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mode-grid.mods {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .feature.tight {
@@ -667,6 +753,9 @@ a { color: inherit; text-decoration: none; }
   .nav { display: none; }
   .topbar-right { gap: 0; }
   .profile { grid-template-columns: 1fr 1fr; }
+  .pm-grid,
+  .decision-strip,
+  .fit-grid { grid-template-columns: 1fr; }
   .project-head {
     grid-template-columns: auto 1fr;
   }
@@ -676,7 +765,8 @@ a { color: inherit; text-decoration: none; }
   .story-steps,
   .story-steps.five,
   .mode-grid,
-  .mode-grid.dual { grid-template-columns: 1fr; }
+  .mode-grid.dual,
+  .mode-grid.mods { grid-template-columns: 1fr; }
   .also li { grid-template-columns: 1fr; gap: 4px; }
   .media.tall,
   .media.hero-media { min-height: 220px; }
