@@ -34,7 +34,7 @@
       <p class="hero-name">Pi Chengxi <span data-i18n="hero.nameZh">皮丞汐</span></p>
       <h1 data-i18n="hero.title">Relevant Past Work</h1>
       <p class="hero-lead" data-i18n="hero.lead">
-        A short portfolio of my AI product experience—prepared so you can quickly see how I define problems, design research workflows, and ship usable academic AI applications.
+        A short portfolio of my AI product experience—prepared so you can quickly see how I define problems, set capability boundaries, design research workflows, and ship usable academic AI applications.
       </p>
 
       <dl class="profile">
@@ -63,6 +63,29 @@
           <dd data-i18n="hero.target">University-Wide AI Application Hub (AIPHOEN-2)</dd>
         </div>
       </dl>
+
+      <div class="capstone-map">
+        <p class="feature-label" data-i18n="cap.label">Fit for AIPHOEN-2</p>
+        <h2 data-i18n="cap.title">How this maps to a university AI application hub</h2>
+        <div class="fit-grid">
+          <div>
+            <h3 data-i18n="cap.1t">Application orchestration</h3>
+            <p data-i18n="cap.1p">Scenario routing and capability boundaries across review, close reading, and formatting—not one generic chat.</p>
+          </div>
+          <div>
+            <h3 data-i18n="cap.2t">Knowledge boundaries</h3>
+            <p data-i18n="cap.2p">Approved inputs and scoped outputs: attachment → one paper; topic → review; Word → journal template.</p>
+          </div>
+          <div>
+            <h3 data-i18n="cap.3t">Evaluation &amp; control</h3>
+            <p data-i18n="cap.3p">Quality rules, human revision loops, mode–cost matching, and polish after generation.</p>
+          </div>
+          <div>
+            <h3 data-i18n="cap.4t">Multi-role academic use</h3>
+            <p data-i18n="cap.4p">Master’s / PhD / journal / teacher workflows—transferable to students, teachers, and research support.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="project" id="researchx">
@@ -84,6 +107,38 @@
         The goal is clear: cut the time cost of finding literature, building structure, drafting, and formatting, while staying close to real academic situations such as thesis proposals, dissertations, and journal submissions—rather than producing generic AI long-form text.
       </p>
 
+      <div class="pm-grid">
+        <div class="pm-box">
+          <p class="feature-label" data-i18n="rx.roleLabel">My role &amp; decisions</p>
+          <ul class="feature-points">
+            <li data-i18n="rx.role1">Split academic writing into three independent paths with clear inputs, goals, and boundaries</li>
+            <li data-i18n="rx.role2">Set the routing rule: attachment → single-paper interpretation; topic only → literature review</li>
+            <li data-i18n="rx.role3">Designed four review modes by real use case (structure, ending logic, delivery standard)—not one prompt template</li>
+            <li data-i18n="rx.role4">Productized quality rules and a generate → evaluate → polish loop (prompt iteration, manual checks, expert review)</li>
+            <li data-i18n="rx.role5">Pushed journal-format conversion from one-off adaptation toward a scalable template pipeline</li>
+          </ul>
+        </div>
+        <div class="pm-box">
+          <p class="feature-label" data-i18n="rx.outLabel">Outcomes</p>
+          <ul class="feature-points">
+            <li data-i18n="rx.out1">Shipped ResearchX to production (live product)</li>
+            <li data-i18n="rx.out2">Scaled journal / LaTeX template coverage to 100+ journals</li>
+            <li data-i18n="rx.out3">Cut per-journal setup time from ~6 hours to ~1 hour via standardized adaptation</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="decision-strip">
+        <div>
+          <h4 data-i18n="rx.dec1t">Routing decision</h4>
+          <p data-i18n="rx.dec1p">Users often confuse “upload one paper” with “write a review.” I treated them as two products, not two inputs to the same flow.</p>
+        </div>
+        <div>
+          <h4 data-i18n="rx.dec2t">Evaluation &amp; polish</h4>
+          <p data-i18n="rx.dec2p">Long AI text is not the end state: outline-first, required summary rules, then local rewrite / global refine after draft.</p>
+        </div>
+      </div>
+
       <figure class="media hero-media" data-src="assets/researchx-cover.jpg">
         <img alt="ResearchX cover" hidden />
         <figcaption><span data-i18n="rx.coverLabel">Cover</span> researchx.cn</figcaption>
@@ -99,12 +154,12 @@
             <p data-i18n="rx.c1.m1p">A fuller four-chapter review with abstract and keywords—a stand-alone first draft</p>
           </article>
           <article>
-            <h4 data-i18n="rx.c1.m2t">Master’s</h4>
-            <p data-i18n="rx.c1.m2p">Introduction + literature-review chapter; a required summary that bridges to the user’s RQ and methods</p>
-          </article>
-          <article>
             <h4 data-i18n="rx.c1.m3t">Journal</h4>
             <p data-i18n="rx.c1.m3p">High information density; the summary lands on the research gap and the paper’s marginal contribution</p>
+          </article>
+          <article>
+            <h4 data-i18n="rx.c1.m2t">Master’s</h4>
+            <p data-i18n="rx.c1.m2p">Introduction + literature-review chapter; a required summary that bridges to the user’s RQ and methods</p>
           </article>
           <article>
             <h4 data-i18n="rx.c1.m4t">PhD</h4>
@@ -190,6 +245,27 @@
         The economic data platform was strong at supply—picking databases, browsing, downloading, and visualizing. The real bottleneck sits further upstream: research questions lack a translation layer to databases, theoretical variables are hard to map to observable fields, cross-database joins go wrong easily, and even with fields users still need feasibility checks and causal research plans. DataMatch is an in-platform <strong>research workflow</strong>, not a generic chat bot; it deliberately excludes browsing, data pulls, and membership, with a separate research-service Base URL.
       </p>
 
+      <div class="pm-grid">
+        <div class="pm-box">
+          <p class="feature-label" data-i18n="dm.roleLabel">My role &amp; decisions</p>
+          <ul class="feature-points">
+            <li data-i18n="dm.role1">Defined the problem as “question → matching → executable plan,” not another chat or download tool</li>
+            <li data-i18n="dm.role2">Set a hard product boundary: research service only; browsing / membership stay on the original platform</li>
+            <li data-i18n="dm.role3">Designed dual entry paths (full-catalog explore vs specified-DB fit) sharing one downstream plan pipeline</li>
+            <li data-i18n="dm.role4">Made human–AI collaboration the core: AI proposes fields/roles; users confirm before regenerating the plan</li>
+            <li data-i18n="dm.role5">Translated empirical-methods language (X/Y/M/W/C, feasibility vs identification) into modules users can act on</li>
+          </ul>
+        </div>
+        <div class="pm-box">
+          <p class="feature-label" data-i18n="dm.outLabel">Outcomes</p>
+          <ul class="feature-points">
+            <li data-i18n="dm.out1">0→1 product definition and launch on the economic data platform (live)</li>
+            <li data-i18n="dm.out2">Closed the research loop: research question → DB/field match → hypotheses / causal plan → PDF export</li>
+            <li data-i18n="dm.out3">Kept the AI service independently shippable with low intrusion into the existing frontend</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="mode-grid dual">
         <article>
           <h4 data-i18n="dm.m1t">Exploratory · full-catalog recommend</h4>
@@ -202,30 +278,44 @@
       </div>
 
       <div class="feature tight">
-        <div class="feature-label" data-i18n="dm.coreLabel">Core interaction</div>
-        <h3 data-i18n="dm.coreTitle">Field shelf · human–AI collaboration</h3>
-        <p class="feature-one" data-i18n="dm.coreOne">AI recalls candidates and suggested roles; users decide what to enable and which roles to assign (at most one X and one Y); changing the pool/checks does not rerun the expensive path—confirm, then regenerate (revision+1).</p>
-        <ul class="feature-points">
-          <li data-i18n="dm.coreP1">Field states: active / demoted / parked / excluded · grey checks + reason copy so “looks usable” never means “entered the model”</li>
-          <li data-i18n="dm.coreP2">First analyze only checks primary mappings; other candidates stay unchecked to reduce cognitive load</li>
-          <li data-i18n="dm.coreP3">Principle: AI drafts · users make research judgments · the system enforces constraints and recalculation</li>
-        </ul>
+        <div class="feature-label" data-i18n="dm.modLabel">Modules</div>
+        <h3 data-i18n="dm.modTitle">What the product covers</h3>
+        <p class="feature-one" data-i18n="dm.modOne">Visible capabilities along the research workflow—from picking data to exporting an executable plan.</p>
+        <div class="mode-grid mods">
+          <article>
+            <h4 data-i18n="dm.f1t">Quick DB pick</h4>
+            <p data-i18n="dm.f1p">Recommend list / search / pin a specified database</p>
+          </article>
+          <article>
+            <h4 data-i18n="dm.f2t">Field catalog</h4>
+            <p data-i18n="dm.f2p">Browse by database or search field names/definitions; optional seed preselect</p>
+          </article>
+          <article>
+            <h4 data-i18n="dm.f3t">Research analyze</h4>
+            <p data-i18n="dm.f3p">Submit a research question (with optional DB / seeds) and get structured results</p>
+          </article>
+          <article>
+            <h4 data-i18n="dm.f4t">Results workbench</h4>
+            <p data-i18n="dm.f4p">Recommendation summary, DB fit notes, field shelf, variable mapping, feasibility</p>
+          </article>
+          <article>
+            <h4 data-i18n="dm.f5t">Plan drafting</h4>
+            <p data-i18n="dm.f5p">Hypotheses, causal graph, baseline model, identification strategy, and risks</p>
+          </article>
+          <article>
+            <h4 data-i18n="dm.f6t">Refine &amp; export</h4>
+            <p data-i18n="dm.f6p">Adjust selected fields/roles, regenerate the plan, export causal graph + PDF report</p>
+          </article>
+        </div>
       </div>
 
       <div class="story-steps five">
         <div><b>1</b><span data-i18n="dm.s1">Pick DB / preselect seeds</span></div>
-        <div><b>2</b><span data-i18n="dm.s2">Submit analyze (async)</span></div>
-        <div><b>3</b><span data-i18n="dm.s3">Results workbench + shelf edits</span></div>
-        <div><b>4</b><span data-i18n="dm.s4">Regenerate the plan</span></div>
-        <div><b>5</b><span data-i18n="dm.s5">Causal graph · export PDF</span></div>
+        <div><b>2</b><span data-i18n="dm.s2">Submit research question</span></div>
+        <div><b>3</b><span data-i18n="dm.s3">Review matching &amp; plan</span></div>
+        <div><b>4</b><span data-i18n="dm.s4">Refine fields &amp; regenerate</span></div>
+        <div><b>5</b><span data-i18n="dm.s5">Export causal graph · PDF</span></div>
       </div>
-
-      <p class="feature-sub" data-i18n="dm.sub">Result modules: recommendation summary · DB fit · variable mapping · feasibility · hypotheses · causal graph · baseline model · identification · risks</p>
-      <ul class="feature-points">
-        <li data-i18n="dm.p1">Align with empirical-methods language: cross-DB match keys, shared year windows, feasibility vs identification layered clearly</li>
-        <li data-i18n="dm.p2">Productize long runtimes: queued/running read-only; completed allows shelf edits/export; gaps and demotions stay visible</li>
-        <li data-i18n="dm.p3">Delivery with eng: API contracts &amp; state machines, integration docs, path-based acceptance; push leaf datasets and field-definition enrichment</li>
-      </ul>
     </section>
 
     <section class="more" id="more">
