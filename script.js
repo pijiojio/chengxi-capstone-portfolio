@@ -7,7 +7,9 @@
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  const revealTargets = document.querySelectorAll(".project, .more");
+  const revealTargets = document.querySelectorAll(
+    ".project, .more, .capstone-map"
+  );
   revealTargets.forEach((el) => el.classList.add("reveal"));
 
   if ("IntersectionObserver" in window) {
